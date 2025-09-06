@@ -1,10 +1,6 @@
 
----
-
 # 2️⃣ setup_fiftyone.sh`
-(same as I gave earlier, but stripped of inline `cat` for cleaner repo)
 
-```bash
 #!/bin/bash
 set -euo pipefail
 
