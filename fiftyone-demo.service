@@ -1,0 +1,14 @@
+[Unit]
+Description=FiftyOne Demo Service
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/fiftyone-demo
+ExecStart=/home/ubuntu/fiftyone-demo/venv/bin/python /home/ubuntu/fiftyone-demo/run_demo.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
